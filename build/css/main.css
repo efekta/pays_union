@@ -4447,7 +4447,6 @@ select:-webkit-autofill:focus {
 
 .user {
   display: flex;
-  justify-content: space-between;
   margin-left: 50px;
 }
 
@@ -4838,7 +4837,7 @@ select:-webkit-autofill:focus {
   margin-bottom: 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .promo__pic {
     margin-bottom: 25px;
   }
@@ -4860,16 +4859,14 @@ select:-webkit-autofill:focus {
   background-size: 100% 100%;
 }
 
-.promo__title--app {
-  margin-bottom: 46px;
-}
-
 .promo__desc--app {
   margin-bottom: 25px;
 }
 
-.promo-logo-wrapp {
-  display: flex;
+@media (max-width: 991px) {
+  .promo--app {
+    align-items: flex-end;
+  }
 }
 
 .footer {
