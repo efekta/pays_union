@@ -1,0 +1,24 @@
+.section--bg-pic {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url("../img/bg-gray.png") no-repeat;
+    background-position: center left;
+    background-size: 100% 100%;
+  }
+}
+.promo__title--app {
+  margin-bottom: 46px;
+}
+.promo__desc--app {
+  margin-bottom: 25px;
+}
+.promo-logo-wrapp {
+  display: flex;
+}
+

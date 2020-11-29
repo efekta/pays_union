@@ -1,0 +1,20 @@
+.promo {
+  align-items: center;
+  &__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 45px;
+  }
+
+  &__desc {
+    font-size: 16px;
+    color: #576477;
+    margin-bottom: 40px;
+  }
+  &__pic {
+    @media(max-width: $container-sm) {
+      margin-bottom: 25px;
+    }
+  }
+}

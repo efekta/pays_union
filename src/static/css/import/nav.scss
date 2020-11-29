@@ -1,0 +1,43 @@
+.nav {
+  display: flex;
+  align-items: center;
+  @media(max-width: $container-md) {
+    position: fixed;
+    top: 0;
+    right: -4000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: $white;
+    width: 400px;
+    height: 100vh;
+    z-index: 3;
+    &.nav--show {
+      right: 0;
+    }
+  }
+  @media(max-width: $container-sm) {
+    width: 100%;
+  }
+}
+.nav-list {
+  display: flex;
+  @media(max-width: $container-md) {
+    flex-wrap: wrap;
+  }
+  &__item {
+    margin-left: 30px;
+    @media(max-width: $container-md) {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+  }
+  &__link {
+    color: #626262;
+    font-size: 18px;
+    letter-spacing: 0.45px;
+  }
+}

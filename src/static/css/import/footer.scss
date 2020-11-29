@@ -1,0 +1,47 @@
+.footer {
+  position: relative;
+  min-height: 500px;
+  padding: 50px 0;
+  background: $gray;
+  overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -150px;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background: url("../img/dark-bg.png") no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+  }
+}
+.logo--footer {
+  margin-bottom: 23px;
+}
+.description {
+  color: $white;
+  margin-bottom: 60px;
+}
+.footer__item {
+  margin-top: 70px;
+  @media(max-width: $container-sm) {
+    margin-top: 0;
+  }
+}
+.footer__btn {
+  margin-right: 15px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.user--footer {
+  margin-bottom: 50px;
+  margin-left: 0;
+}
+.footer-list__item {
+  margin-bottom: 20px;
+}
+.footer-list__link {
+  color: $white;
+}

@@ -1,0 +1,40 @@
+.banner {
+  position: relative;
+  //min-height: 494px;
+  padding: 50px 0;
+  background: url("../img/austin.jpg") no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.banner-content {
+  max-width: 537px;
+  @media(max-width: $container-md) {
+    max-width: 100%;
+  }
+}
+.banner-content__title {
+  font-size: 18px;
+  color: $orange;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+.banner-content__desc {
+  font-size: 34px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $gray;
+  margin-bottom: 50px;
+  @media(max-width: $container-sm) {
+    font-size: 28px;
+  }
+  @media(max-width: 575px) {
+    font-size: 22px;
+  }
+}
+.banner-content__text {
+  color: $gray;
+  margin-bottom: 40px;
+}
+.banner-content__btn {
+
+}

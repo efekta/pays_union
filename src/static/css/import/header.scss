@@ -1,0 +1,64 @@
+.header-wrapp {
+  position: fixed;
+  min-height: 133px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background: $white;
+  padding: 0 15px;
+  margin-bottom: 0;
+}
+.header__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 0;
+}
+.header {
+
+  &__btn {
+    margin-left: 15px;
+  }
+  &__lang {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 0;
+    border-bottom: 1px solid #e1e1e1;
+    @media(max-width: $container-md) {
+      padding-right: 70px;
+    }
+    &.open {
+      position: static;
+    }
+  }
+  &__links {
+    display: flex;
+
+  }
+  &__link {
+    position: relative;
+    padding: 0 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    &--active {
+      font-weight: bold;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1px;
+        height: 100%;
+        background: #ff9033;
+      }
+    }
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
