@@ -3,9 +3,87 @@ block vars
     - var title = '404';
 
 block header
-    include ../includes/header.pug
+    .header-wrapp
+        header.header
+            .container
+                .header__lang
+                    .burger
+                        span
+                        span
+                        span
+                    .header__links
+                        a.header__link.header__link--active(href="#") Ru
+                        a.header__link(href="plug-en.html") En
+            .container
+                .header__box
+                    a.logo(href="/index.html")
+                        img(src="img/logo.png" alt="")
+                    .header__menu
+                        nav.nav
+                            ul.nav-list
+                                li.nav-list__item
+                                    a(href="#").nav-list__link Продукты
+                                li.nav-list__item
+                                    a(href="#").nav-list__link Тарифы
+                                li.nav-list__item
+                                    a(href="#").nav-list__link О компании
+                            .user
+                                a(href="#").header__btn.btn.btn--user
+                                    span Вход
+                                a(href="#").header__btn.btn.btn--orange
+                                    span Регистрация
 block content
     include ../includes/404.pug
 block footer
-    include ../includes/footer.pug
+    footer.footer
+        .container
+            .row
+                .col-md-6
+                    a.logo.logo--footer(href="#")
+                        img(src="img/dark-logo.png" alt="")
+                    ul.company
+                        li.company__item
+                            span.company__title Company:
+                            span.company__desc Money Change s.r.o.,
+                        li.company__item
+                            span.company__title ID:
+                            span.company__desc 27378527
+                        li.company__item
+                            span.company__title Reg. No.:
+                            span.company__desc 2018/000383/CHB/570
+                        li.company__item
+                            span.company__title Address:
+                            span.company__desc Peluskova 1443, Kyje, 198 000 Prague 9
+
+                    p.description.description--footer Надежный поставщик платежных решений для различных компаний по всему Миру.
+                    .user.user--footer
+                        a(href="#").footer__btn.btn.btn--user.btn--white
+                            span Вход
+                        a(href="#").footer__btn.btn.btn--orange
+                            span Регистрация
+                    p.description.description--footer © Все права защищены.
+                .col-md-3
+                    .footer__item
+                        h4.subtitle.subtitle--white Продукты
+                        ul.footer-list
+                            li.footer-list__item
+                                a(href="#").footer-list__link Банковские переводы
+                            li.footer-list__item
+                                a(href="#").footer-list__link Интернет эквайринг
+                            li.footer-list__item
+                                a(href="#").footer-list__link Обработка платежей
+                            li.footer-list__item
+                                a(href="#").footer-list__link Тарифы
+                .col-md-3
+                    .footer__item
+                        h4.subtitle.subtitle--white Контакты
+                        ul.company
+                            li.company__item
+                                span.company__title.company__title--inner Email:
+                                a(href="mailto:info@paysunion.com").company__desc.company__desc--inner info@paysunion.com
+
+
+    script(src="libs/jquery/jquery-3.4.1.min.js")
+    script(src="libs/maskedinput/jquery.maskedinput.min.js")
+    script(src="js/common.js")
 

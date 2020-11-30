@@ -3,9 +3,84 @@ block vars
     - var title = '404';
 
 block header
-    include ../includes/header-en.pug
+    .header-wrapp
+        header.header
+            .container
+                .header__lang
+                    .burger
+                        span
+                        span
+                        span
+                    .header__links
+                        a.header__link(href="plug.html") Ru
+                        a.header__link.header__link--active(href="#") En
+            .container
+                .header__box
+                    a.logo(href="/index-en.html")
+                        img(src="img/logo.png" alt="")
+                    .header__menu
+                        nav.nav
+                            ul.nav-list
+                                li.nav-list__item
+                                    a(href="#").nav-list__link Products
+                                li.nav-list__item
+                                    a(href="#").nav-list__link Tariffs
+                                li.nav-list__item
+                                    a(href="#").nav-list__link About company
+                            .user
+                                a(href="#").header__btn.btn.btn--user
+                                    span Login
+                                a(href="#").header__btn.btn.btn--orange
+                                    span Registration
 block content
     include ../includes/404-en.pug
 block footer
-    include ../includes/footer-en.pug
+    footer.footer
+        .container
+            .row
+                .col-md-6
+                    a.logo.logo--footer(href="/index-en.html")
+                        img(src="img/dark-logo.png" alt="")
+                    ul.company
+                        li.company__item
+                            span.company__title Company:
+                            span.company__desc Money Change s.r.o.,
+                        li.company__item
+                            span.company__title ID:
+                            span.company__desc 27378527
+                        li.company__item
+                            span.company__title Reg. No.:
+                            span.company__desc 2018/000383/CHB/570
+                        li.company__item
+                            span.company__title Address:
+                            span.company__desc Peluskova 1443, Kyje, 198 000 Prague 9
+
+                    p.description.description--footer Reliable provider of payment solutions for various companies around the World.
+                    .user.user--footer
+                        a(href="#").footer__btn.btn.btn--user.btn--white
+                            span Login
+                        a(href="#").footer__btn.btn.btn--orange
+                            span Registration
+                    p.description.description--footer © All rights reserved.
+                .col-md-3
+                    .footer__item
+                        h4.subtitle.subtitle--white Products
+                        ul.footer-list
+                            li.footer-list__item
+                                a(href="#").footer-list__link Bank transfers
+                            li.footer-list__item
+                                a(href="#").footer-list__link Internet acquiring
+                            li.footer-list__item
+                                a(href="#").footer-list__link Payment processing
+                            li.footer-list__item
+                                a(href="#").footer-list__link Tariffs
+                .col-md-3
+                    .footer__item
+                        h4.subtitle.subtitle--white Contacts
+                        ul.company
+                            li.company__item
+                                span.company__title.company__title--inner Email:
+                                a(href="mailto:info@paysunion.com").company__desc.company__desc--inner info@paysunion.com
+
+
 
