@@ -44,6 +44,9 @@
     text-transform: uppercase;
     &--active {
       font-weight: bold;
+    }
+    &:first-child {
+      position: relative;
       &:after {
         content: "";
         position: absolute;
