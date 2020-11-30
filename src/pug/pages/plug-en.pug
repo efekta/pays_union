@@ -12,36 +12,35 @@ block header
                         span
                         span
                     .header__links
-                        a.header__link.header__link--active(href="#") Ru
-                        a.header__link(href="plug-en.html") En
+                        a.header__link(href="plug.html") Ru
+                        a.header__link.header__link--active(href="#") En
             .container
                 .header__box
-                    a.logo(href="/index.html")
+                    a.logo(href="/index-en.html")
                         img(src="img/logo.png" alt="")
                     .header__menu
                         nav.nav
                             ul.nav-list
                                 li.nav-list__item
-                                    a(href="#").nav-list__link Продукты
+                                    a(href="#").nav-list__link Products
                                 li.nav-list__item
-                                    a(href="#").nav-list__link Тарифы
+                                    a(href="#").nav-list__link Tariffs
                                 li.nav-list__item
-                                    a(href="#").nav-list__link О компании
+                                    a(href="#").nav-list__link About company
                             .user
                                 a(href="#").header__btn.btn.btn--user
-                                    span Вход
+                                    span Login
                                 a(href="#").header__btn.btn.btn--orange
-                                    span Регистрация
-
+                                    span Registration
 
 block content
-    include ../includes/plug.pug
+    include ../includes/plug-en.pug
 block footer
     footer.footer
         .container
             .row
                 .col-md-6
-                    a.logo.logo--footer(href="#")
+                    a.logo.logo--footer(href="/index-en.html")
                         img(src="img/dark-logo.png" alt="")
                     ul.company
                         li.company__item
@@ -57,28 +56,28 @@ block footer
                             span.company__title Address:
                             span.company__desc Peluskova 1443, Kyje, 198 000 Prague 9
 
-                    p.description.description--footer Надежный поставщик платежных решений для различных компаний по всему Миру.
+                    p.description.description--footer Reliable provider of payment solutions for various companies around the World.
                     .user.user--footer
                         a(href="#").footer__btn.btn.btn--user.btn--white
-                            span Вход
+                            span Login
                         a(href="#").footer__btn.btn.btn--orange
-                            span Регистрация
-                    p.description.description--footer © Все права защищены.
+                            span Registration
+                    p.description.description--footer © All rights reserved.
                 .col-md-3
                     .footer__item
-                        h4.subtitle.subtitle--white Продукты
+                        h4.subtitle.subtitle--white Products
                         ul.footer-list
                             li.footer-list__item
-                                a(href="#").footer-list__link Банковские переводы
+                                a(href="#").footer-list__link Bank transfers
                             li.footer-list__item
-                                a(href="#").footer-list__link Интернет эквайринг
+                                a(href="#").footer-list__link Internet acquiring
                             li.footer-list__item
-                                a(href="#").footer-list__link Обработка платежей
+                                a(href="#").footer-list__link Payment processing
                             li.footer-list__item
-                                a(href="#").footer-list__link Тарифы
+                                a(href="#").footer-list__link Tariffs
                 .col-md-3
                     .footer__item
-                        h4.subtitle.subtitle--white Контакты
+                        h4.subtitle.subtitle--white Contacts
                         ul.company
                             li.company__item
                                 span.company__title.company__title--inner Email:
